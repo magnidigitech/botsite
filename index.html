@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <title>Botsite — Independent Web Design & Development Studio</title>
+  <meta name="description"
+    content="Botsite brings thoughtful design and precise development together to create websites your customers will remember. Independent web design and development studio.">
+  <meta name="keywords"
+    content="web design studio, website development, UI/UX design, custom websites, responsive web development, Botsite studio">
+  <meta name="theme-color" content="#F5F4F0">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Botsite — Independent Web Design & Development Studio">
+  <meta property="og:description"
+    content="Beautiful websites. Built to move you forward. Thoughtful design and precise engineering.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+
+  <!-- =========================================================================
+       1. NAVIGATION BAR
+       ========================================================================= -->
+  <div class="navbar-wrapper">
+    <nav class="navbar" aria-label="Main Navigation">
+      <a href="#" class="brand-logo" id="nav-brand-logo">
+        <span class="brand-dot"></span>
+        Botsite
+      </a>
+
+      <ul class="nav-links" id="desktop-nav-links">
+        <li><a href="#work" class="nav-link">Work</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#philosophy" class="nav-link">Process &amp; Craft</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+      </ul>
+
+      <button class="nav-cta btn-trigger-inquiry" id="nav-start-project-btn">
+        Start a project
+      </button>
+
+      <button class="mobile-menu-toggle" id="mobile-toggle-btn" aria-label="Toggle Menu" aria-expanded="false">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <line x1="4" y1="8" x2="20" y2="8"></line>
+          <line x1="4" y1="16" x2="20" y2="16"></line>
+        </svg>
+      </button>
+    </nav>
+  </div>
+
+  <!-- Mobile Drawer Overlay -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-nav-panel">
+      <ul class="mobile-nav-links">
+        <li><a href="#work" class="mobile-nav-link">Work</a></li>
+        <li><a href="#services" class="mobile-nav-link">Services</a></li>
+        <li><a href="#philosophy" class="mobile-nav-link">Philosophy</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+      </ul>
+      <button class="btn-primary btn-trigger-inquiry" style="width: 100%; margin-top: 24px;">
+        Start a project ↗
+      </button>
+    </div>
+  </div>
+
+  <main>
+    <!-- =======================================================================
+         2. HERO SECTION
+         ======================================================================= -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+
+          <div class="hero-content">
+            <span class="section-label">WEB DESIGN &amp; DEVELOPMENT STUDIO</span>
+
+            <h1 class="hero-headline">
+              Watch your next website<br>
+              take shape.
+            </h1>
+
+            <p class="body-large">
+              Botsite brings thoughtful design and precise development together to create websites your customers will
+              remember.
+            </p>
+
+            <div class="hero-actions">
+              <button class="btn-primary btn-trigger-inquiry" id="hero-start-project-cta">
+                Start a project
+              </button>
+              <a href="#work" class="btn-secondary">
+                Explore our work ↗
+              </a>
+            </div>
+          </div>
+
+          <div class="hero-showcase-wrapper">
+            <div style="margin-bottom: 8px;">
+              <span class="concept-badge-tag">ONE BRAND. THREE POSSIBILITIES.</span>
+            </div>
+
+            <div class="hero-showcase-card" id="hero-showcase-card">
+              
+              <div class="showcase-frames-group">
+                <!-- Desktop Browser Window Mockup -->
+                <div class="showcase-browser-window">
+                  <div class="browser-header">
+                    <div class="browser-dots">
+                      <span class="browser-dot browser-dot-close"></span>
+                      <span class="browser-dot browser-dot-min"></span>
+                      <span class="browser-dot browser-dot-max"></span>
+                    </div>
+                    <div class="browser-url-bar" id="showcase-url-bar">kinetic.studio/minimal</div>
+                  </div>
+                  <div class="showcase-viewport" id="showcase-desktop-viewport">
+                    <!-- Rendered dynamically by heroShowcase.js -->
+                  </div>
+                </div>
+
+                <!-- Mobile Overlapping Window Mockup -->
+                <div class="showcase-mobile-window">
+                  <div class="mobile-notch"></div>
+                  <div class="mobile-showcase-viewport" id="showcase-mobile-viewport">
+                    <!-- Rendered dynamically by heroShowcase.js -->
+                  </div>
+                </div>
+              </div>
+
+              <!-- Selectors & Instructing Bar -->
+              <div class="showcase-selectors-bar">
+                <div class="concept-btn-group" role="tablist" aria-label="Concept Designs">
+                  <button class="concept-selector-btn is-active" data-style="minimal" role="tab"
+                    aria-selected="true">Minimal</button>
+                  <button class="concept-selector-btn" data-style="bold" role="tab"
+                    aria-selected="false">Bold</button>
+                  <button class="concept-selector-btn" data-style="editorial" role="tab"
+                    aria-selected="false">Editorial</button>
+                </div>
+
+                <div class="showcase-hint-text">
+                  <span class="concept-badge-tag">Interactive concept</span>
+                  <span>Explore styles &rarr;</span>
+                </div>
+              </div>
+
+            </div>
+
+            <a href="#" id="showcase-cta-link" class="showcase-cta-link">
+              Like this direction? Let’s make it yours ↗
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         3. SELECTED WORK SECTION
+         ======================================================================= -->
+    <section class="section-padding work-section" id="work">
+      <div class="container">
+        <span class="section-label">SELECTED WORK</span>
+        <h2 class="section-headline">Designed to make an impression.</h2>
+        <p class="body-large">A curated selection of website projects demonstrating our visual clarity and frontend
+          engineering.</p>
+
+        <div class="work-grid">
+
+          <!-- Wide Featured Project 1 (With Interactive Before & After Slider) -->
+          <article class="work-card work-card-featured" id="work-card-aetheria">
+            <div class="before-after-widget" id="before-after-container">
+              <div class="before-layer">
+                <img id="img-mockup-aetheria" class="work-preview-img" alt="Botsite Concept Redesign" loading="lazy">
+              </div>
+              <div class="after-layer" id="before-after-layer">
+                <img id="img-mockup-aetheria-before" alt="Legacy Website Layout 2021" loading="lazy">
+              </div>
+              <div class="before-after-handle">
+                <span class="handle-badge">&harr;</span>
+              </div>
+              <input type="range" min="0" max="100" value="50" class="before-after-range-input" id="before-after-slider" aria-label="Before and After Redesign Comparison Slider">
+              <div class="comparison-labels">
+                <span class="comparison-label-badge">BEFORE (LEGACY)</span>
+                <span class="comparison-label-badge" style="background-color: var(--accent-blue);">AFTER (BOTSITE REDESIGN)</span>
+              </div>
+            </div>
+
+            <div class="work-info">
+              <div class="work-meta">
+                <span class="concept-badge">Concept Project 01 — Redesign Slider</span>
+                <span class="work-industry-tag">Architecture &amp; Spatial Design</span>
+              </div>
+              <h3 class="work-title">Aetheria Studio</h3>
+              <p class="work-services-list">Services: Visual Identity, Web Design, Interactive WebGL Experience</p>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="work-card" id="work-card-lumina">
+            <div class="work-preview-container">
+              <img id="img-mockup-lumina" class="work-preview-img" alt="Lumina Finance Website Preview" loading="lazy">
+            </div>
+            <div class="work-info">
+              <div class="work-meta">
+                <span class="concept-badge">Concept Project 02</span>
+                <span class="work-industry-tag">FinTech &amp; Global Payments</span>
+              </div>
+              <h3 class="work-title">Lumina Finance</h3>
+              <p class="work-services-list">Services: Brand Strategy, UI/UX System, Full-stack Web Application</p>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="work-card" id="work-card-kineo">
+            <div class="work-preview-container">
+              <img id="img-mockup-kineo" class="work-preview-img" alt="Kineo Dynamics Website Preview" loading="lazy">
+            </div>
+            <div class="work-info">
+              <div class="work-meta">
+                <span class="concept-badge">Concept Project 03</span>
+                <span class="work-industry-tag">Autonomous Robotics &amp; Engineering</span>
+              </div>
+              <h3 class="work-title">Kineo Dynamics</h3>
+              <p class="work-services-list">Services: Web Development, 3D Product Configurator, Motion Design</p>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. SERVICES SECTION
+         ======================================================================= -->
+    <section class="section-padding services-section" id="services">
+      <div class="container">
+        <span class="section-label">OUR SERVICES &amp; OFFERINGS</span>
+        <h2 class="section-headline">From first impression to final interaction.</h2>
+        <p class="services-tagline">
+          Beautiful websites, thoughtfully built—with distinctive interactive experiences and dependable ongoing
+          support.
+        </p>
+
+        <div class="services-list" role="tablist">
+
+          <!-- Service 01: Custom Website Design & Development (Flagship) -->
+          <div class="service-item is-expanded" id="service-item-1">
+            <div class="service-header" role="button" aria-expanded="true" tabindex="0">
+              <div class="service-num-title-block">
+                <span class="service-num">01</span>
+                <div class="service-title-meta">
+                  <div class="service-title-row">
+                    <h3 class="service-title">Custom Website Design &amp; Development</h3>
+                    <span class="service-flagship-badge">Flagship Offering</span>
+                  </div>
+                  <p class="service-summary-visible">
+                    Complete business websites delivered from concept to launch with responsive layouts, content
+                    management, and deployment support.
+                  </p>
+                </div>
+              </div>
+              <div class="service-toggle-icon">+</div>
+            </div>
+            <div class="service-body">
+              <div class="service-content-grid">
+                <p class="service-desc">
+                  Our main offering: a bespoke digital presence engineered from scratch. We combine tailored visual
+                  design, semantic HTML/CSS, flexible CMS integration, accessibility standards, and launch support into
+                  one unified project.
+                </p>
+                <div class="service-visual-preview">
+                  <span class="service-pill-tag">Bespoke Design System</span>
+                  <span class="service-pill-tag">Responsive Engineering</span>
+                  <span class="service-pill-tag">CMS Setup</span>
+                  <span class="service-pill-tag">Launch &amp; Deployment</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 02: Website Redesign -->
+          <div class="service-item" id="service-item-2">
+            <div class="service-header" role="button" aria-expanded="false" tabindex="0">
+              <div class="service-num-title-block">
+                <span class="service-num">02</span>
+                <div class="service-title-meta">
+                  <h3 class="service-title">Website Redesign</h3>
+                  <p class="service-summary-visible">
+                    A focused visual refresh, clearer navigation, improved mobile experience, and content migration for
+                    existing websites.
+                  </p>
+                </div>
+              </div>
+              <div class="service-toggle-icon">+</div>
+            </div>
+            <div class="service-body">
+              <div class="service-content-grid">
+                <p class="service-desc">
+                  Transform outdated web properties into sleek, modern platforms. We audit existing UX bottlenecks,
+                  restructure site architecture, refine typography and spacing, and migrate your content safely without
+                  losing SEO rankings.
+                </p>
+                <div class="service-visual-preview">
+                  <span class="service-pill-tag">Visual Refresh</span>
+                  <span class="service-pill-tag">Navigation &amp; UX Audit</span>
+                  <span class="service-pill-tag">Mobile Optimization</span>
+                  <span class="service-pill-tag">Content Migration</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 03: E-commerce Websites -->
+          <div class="service-item" id="service-item-3">
+            <div class="service-header" role="button" aria-expanded="false" tabindex="0">
+              <div class="service-num-title-block">
+                <span class="service-num">03</span>
+                <div class="service-title-meta">
+                  <h3 class="service-title">E-commerce Websites</h3>
+                  <p class="service-summary-visible">
+                    Tailored online store design, high-converting product pages, collection layouts, and seamless
+                    payment and shipping setup.
+                  </p>
+                </div>
+              </div>
+              <div class="service-toggle-icon">+</div>
+            </div>
+            <div class="service-body">
+              <div class="service-content-grid">
+                <p class="service-desc">
+                  Distinctive storefronts built to showcase your products and convert browsers into loyal customers.
+                  Complete with custom collection grids, fast cart drawers, checkout integration, and shipping workflow
+                  configuration.
+                </p>
+                <div class="service-visual-preview">
+                  <span class="service-pill-tag">Store Builds &amp; Themes</span>
+                  <span class="service-pill-tag">Product Detail Pages</span>
+                  <span class="service-pill-tag">Cart &amp; Checkout</span>
+                  <span class="service-pill-tag">Payment &amp; Shipping</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 04: Landing Pages -->
+          <div class="service-item" id="service-item-4">
+            <div class="service-header" role="button" aria-expanded="false" tabindex="0">
+              <div class="service-num-title-block">
+                <span class="service-num">04</span>
+                <div class="service-title-meta">
+                  <h3 class="service-title">Landing Pages</h3>
+                  <p class="service-summary-visible">
+                    Focused high-conversion pages for advertising campaigns, product launches, and lead generation with
+                    event tracking.
+                  </p>
+                </div>
+              </div>
+              <div class="service-toggle-icon">+</div>
+            </div>
+            <div class="service-body">
+              <div class="service-content-grid">
+                <p class="service-desc">
+                  High-impact single-page experiences built to maximize conversion rates for paid ad campaigns, product
+                  announcements, and email signups. Fast turnaround with integrated lead capture and tracking analytics.
+                </p>
+                <div class="service-visual-preview">
+                  <span class="service-pill-tag">Campaign Launches</span>
+                  <span class="service-pill-tag">Lead Capture Forms</span>
+                  <span class="service-pill-tag">Conversion Tracking</span>
+                  <span class="service-pill-tag">Fast Execution</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 05: 3D & Interactive Experiences -->
+          <div class="service-item" id="service-item-5">
+            <div class="service-header" role="button" aria-expanded="false" tabindex="0">
+              <div class="service-num-title-block">
+                <span class="service-num">05</span>
+                <div class="service-title-meta">
+                  <h3 class="service-title">3D &amp; Interactive Experiences</h3>
+                  <p class="service-summary-visible">
+                    Custom 3D visual centerpieces, product showcases, motion design, and purposeful micro-interactions
+                    that captivate users.
+                  </p>
+                </div>
+              </div>
+              <div class="service-toggle-icon">+</div>
+            </div>
+            <div class="service-body">
+              <div class="service-content-grid">
+                <p class="service-desc">
+                  Our signature premium upgrade. We build real-time WebGL / Three.js 3D centerpieces, scroll-driven
+                  motion storytelling, interactive product configurators, and micro-interactions that elevate your brand
+                  far beyond static templates.
+                </p>
+                <div class="service-visual-preview">
+                  <span class="service-pill-tag">Signature Upgrade</span>
+                  <span class="service-pill-tag">Three.js / WebGL</span>
+                  <span class="service-pill-tag">Motion Storytelling</span>
+                  <span class="service-pill-tag">Product Showcases</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Service 06: Website Care & Optimization -->
+          <div class="service-item" id="service-item-6">
+            <div class="service-header" role="button" aria-expanded="false" tabindex="0">
+              <div class="service-num-title-block">
+                <span class="service-num">06</span>
+                <div class="service-title-meta">
+                  <h3 class="service-title">Website Care &amp; Optimization</h3>
+                  <p class="service-summary-visible">
+                    Ongoing monthly updates, bug fixes, uptime monitoring, Core Web Vitals performance tuning, and
+                    agreed content edits.
+                  </p>
+                </div>
+              </div>
+              <div class="service-toggle-icon">+</div>
+            </div>
+            <div class="service-body">
+              <div class="service-content-grid">
+                <p class="service-desc">
+                  Dependable ongoing technical support and maintenance plans. Keep your website secure, blazing fast, up
+                  to date with new features, and protected against downtime with dedicated monthly support hours.
+                </p>
+                <div class="service-visual-preview">
+                  <span class="service-pill-tag">Monthly Care Plan</span>
+                  <span class="service-pill-tag">Performance Optimization</span>
+                  <span class="service-pill-tag">Security &amp; Bug Fixes</span>
+                  <span class="service-pill-tag">Uptime Monitoring</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Add-ons & Foundations Banner -->
+        <div class="services-addons-banner">
+          <div>
+            <h4 class="addons-title">Flexible Project Add-ons</h4>
+            <p style="font-size: 0.925rem; color: var(--text-graphite-muted);">
+              Enhance any core service with specialized add-on capabilities tailored to your growth strategy:
+            </p>
+            <div class="addons-chips">
+              <span class="addon-chip">+ Technical SEO &amp; Indexing</span>
+              <span class="addon-chip">+ Website Copywriting</span>
+              <span class="addon-chip">+ CRM &amp; Email Automation</span>
+              <span class="addon-chip">+ Brand Style Guidelines</span>
+            </div>
+          </div>
+
+          <div class="foundation-box">
+            <span class="foundation-title">Included Standard Foundations</span>
+            <p class="foundation-desc">
+              Every complete website project we deliver automatically includes responsive mobile design, WCAG
+              accessibility foundations, fast page speeds, and technical SEO structure.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. DESIGN PHILOSOPHY (DARK SECTION)
+         ======================================================================= -->
+    <section class="section-padding philosophy-section" id="philosophy">
+      <div class="container">
+        <div class="philosophy-grid">
+
+          <div>
+            <span class="section-label" style="color: #345CFF;">DESIGN PHILOSOPHY</span>
+            <h2 class="section-headline section-headline-dark">Every detail has a purpose.</h2>
+            <p class="body-large body-large-dark">
+              We believe a website should be more than visually attractive. It must be an effortless expression of
+              quality and intent.
+            </p>
+
+            <div class="principles-list">
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 2v20M2 12h20" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="principle-title">Clarity</h4>
+                  <p class="principle-desc">Make every next step easy to understand through intuitive typography,
+                    structure, and hierarchy.</p>
+                </div>
+              </div>
+
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="m12 8 4 4-4 4-4-4 4-4z" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="principle-title">Character</h4>
+                  <p class="principle-desc">Give each brand a distinctive presence through tailored materials, subtle
+                    motion, and custom details.</p>
+                </div>
+              </div>
+
+              <div class="principle-item">
+                <div class="principle-icon">
+                  <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polygon
+                      points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                  </svg>
+                </div>
+                <div>
+                  <h4 class="principle-title">Craft</h4>
+                  <p class="principle-desc">Refine the interactions, speed, and feedback loops that make a website feel
+                    truly complete.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Interactive Restrained Mockup -->
+          <div class="mockup-container">
+            <div class="mockup-header">
+              <div class="mockup-dots">
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+                <span class="mockup-dot"></span>
+              </div>
+              <div class="mockup-tabs">
+                <button class="mockup-tab-btn is-active" id="btn-tab-layout">Layout</button>
+                <button class="mockup-tab-btn" id="btn-tab-tokens">Tokens</button>
+                <button class="mockup-tab-btn" id="btn-tab-code">Code</button>
+              </div>
+            </div>
+
+            <div class="mockup-viewport" id="mockup-viewport-content">
+              <!-- Content rendered dynamically by main.js -->
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         6. PROCESS SECTION
+         ======================================================================= -->
+    <section class="section-padding process-section" id="process">
+      <div class="container">
+        <span class="section-label">HOW WE WORK</span>
+        <h2 class="section-headline">Clear, approachable process.</h2>
+
+        <div class="process-grid">
+
+          <div class="process-card">
+            <span class="process-step-num">01 / DISCOVER</span>
+            <h3 class="process-step-title">Discover</h3>
+            <p class="process-step-desc">Understand the brand, target audience, technical requirements, and strategic
+              goals for the project.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-num">02 / DESIGN</span>
+            <h3 class="process-step-title">Design</h3>
+            <p class="process-step-desc">Define the visual direction, interactive components, responsive layouts, and
+              typography systems.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-num">03 / DEVELOP</span>
+            <h3 class="process-step-title">Develop</h3>
+            <p class="process-step-desc">Build clean, responsive layouts, 3D elements, and purposeful interactions with
+              high performance.</p>
+          </div>
+
+          <div class="process-card">
+            <span class="process-step-num">04 / LAUNCH</span>
+            <h3 class="process-step-title">Launch</h3>
+            <p class="process-step-desc">Test across devices, optimize performance, verify accessibility, and prepare
+              for release.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         7. ABOUT SECTION
+         ======================================================================= -->
+    <section class="section-padding about-section" id="about">
+      <div class="container">
+        <div class="about-card">
+          <span class="section-label">ABOUT BOTSITE</span>
+          <h2 class="section-headline" style="max-width: 720px;">Thoughtful design meets precise engineering.</h2>
+          <p class="body-large" style="max-width: 680px; margin-top: 16px;">
+            Botsite is an independent studio focused on crafting distinct, modern websites for forward-thinking brands
+            and businesses. We combine rigorous visual aesthetics with precise frontend execution, ensuring every
+            website we build is engaging, responsive, and easy to maintain.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         8. FINAL CALL TO ACTION (CTA)
+         ======================================================================= -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-box">
+          <h2 class="section-headline" style="margin-bottom: 0;">Let’s build something worth visiting.</h2>
+          <p class="body-large">Tell us what you have in mind. We’ll help shape what comes next.</p>
+          <button class="btn-primary btn-trigger-inquiry" id="cta-start-project-btn">
+            Start a project ↗
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================================================================
+       9. FOOTER
+       ========================================================================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div>
+          <a href="#" class="brand-logo">
+            <span class="brand-dot"></span>
+            Botsite
+          </a>
+          <p class="footer-brand-desc">
+            Independent web design and development studio building beautiful, memorable websites.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#philosophy">Process &amp; Craft</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-col-title">Contact</h4>
+          <ul class="footer-links">
+            <li><a href="mailto:hello@botsite.studio">hello@botsite.studio</a></li>
+            <li><span style="font-size: 0.9rem; color: var(--text-graphite-muted);">Independent Studio</span></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>&copy; <span id="current-year"></span> Botsite Studio. All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       10. PROJECT INQUIRY MODAL ("START A PROJECT" FLOW)
+       ========================================================================= -->
+  <dialog id="inquiry-modal" closedby="any" class="inquiry-modal" aria-labelledby="inquiry-modal-title">
+    <div class="modal-header">
+      <h3 id="inquiry-modal-title" class="modal-title">Start a project</h3>
+      <button type="button" class="modal-close-btn" id="modal-close-btn" aria-label="Close dialog">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+
+    <div class="modal-body">
+
+      <!-- Form View -->
+      <form id="inquiry-form" class="inquiry-form" novalidate>
+        <div class="form-group" id="group-direction">
+          <label for="input-direction" class="form-label">Style Direction Preference</label>
+          <input type="text" id="input-direction" class="form-input" value="Minimal Style Direction" readonly style="background-color: var(--bg-ivory-elevated); color: var(--accent-blue); font-weight: 600;">
+        </div>
+
+        <div class="form-group" id="group-name">
+          <label for="input-name" class="form-label">Your Name *</label>
+          <input type="text" id="input-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+          <span class="form-error">Please enter your name.</span>
+        </div>
+
+        <div class="form-group" id="group-email">
+          <label for="input-email" class="form-label">Email Address *</label>
+          <input type="email" id="input-email" class="form-input" placeholder="alex@company.com" required>
+          <span class="form-error">Please enter a valid email address.</span>
+        </div>
+
+        <div class="form-group" id="group-company">
+          <label for="input-company" class="form-label">Company / Organization (Optional)</label>
+          <input type="text" id="input-company" class="form-input" placeholder="e.g. Studio Co.">
+        </div>
+
+        <div class="form-group" id="group-desc">
+          <label for="input-desc" class="form-label">Project Description *</label>
+          <textarea id="input-desc" class="form-textarea" rows="3"
+            placeholder="Tell us about your project goals, timeline, and deliverables..." required></textarea>
+          <span class="form-error">Please provide a brief project description.</span>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label">Estimated Budget Range (Optional)</label>
+          <div class="budget-options">
+            <label class="budget-chip">
+              <input type="radio" name="budget" value="< $10k">
+              <span>&lt; $10k</span>
+            </label>
+            <label class="budget-chip">
+              <input type="radio" name="budget" value="$10k - $25k" checked>
+              <span>$10k – $25k</span>
+            </label>
+            <label class="budget-chip">
+              <input type="radio" name="budget" value="$25k - $50k">
+              <span>$25k – $50k</span>
+            </label>
+            <label class="budget-chip">
+              <input type="radio" name="budget" value="$50k+">
+              <span>$50k+</span>
+            </label>
+          </div>
+        </div>
+
+        <button type="submit" class="btn-primary" style="margin-top: 12px; width: 100%;">
+          Submit Inquiry ↗
+        </button>
+      </form>
+
+      <!-- Success State View -->
+      <div id="modal-success-state" class="modal-success-state">
+        <div class="success-icon">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+            <polyline points="20 6 9 17 4 12"></polyline>
+          </svg>
+        </div>
+        <h4 style="font-size: 1.4rem; font-weight: 600;">Inquiry Sent Successfully</h4>
+        <p style="color: var(--text-graphite-muted); max-width: 420px; font-size: 0.95rem;">
+          Thank you for reaching out! We’ve received your project details and will be in touch within 24 hours.
+        </p>
+        <button type="button" class="btn-secondary" id="modal-reset-btn" style="margin-top: 16px;">
+          Done
+        </button>
+      </div>
+
+    </div>
+  </dialog>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

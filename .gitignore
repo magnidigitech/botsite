@@ -1,0 +1,16 @@
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Production Build
+dist/
+
+# OS / Editor Files
+.DS_Store
+*.suo
+*.ntvsopt
+*.njsproj
+*.sln
+*.sw?
+.vscode/
+.idea/
