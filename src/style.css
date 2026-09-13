@@ -432,19 +432,29 @@ h1, h2, h3, h4, .display-text {
 .mobile-contact-info {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 12px;
+  margin-bottom: 4px;
 }
 
 .mobile-contact-link {
-  font-size: 0.9rem;
-  color: var(--text-graphite-muted);
+  font-size: 1.25rem;
+  color: var(--text-graphite);
   text-decoration: none;
-  font-weight: 500;
-  transition: color var(--transition-fast);
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 0;
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.mobile-contact-icon {
+  font-size: 1.35rem;
 }
 
 .mobile-contact-link:hover {
   color: var(--accent-blue);
+  transform: translateX(4px);
 }
 
 /* --------------------------------------------------------------------------
@@ -1909,12 +1919,13 @@ body.custom-cursor-active [contenteditable] {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 12px;
 }
 
 .footer-links a {
-  font-size: 0.9rem;
-  color: var(--text-graphite-muted);
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-graphite);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
