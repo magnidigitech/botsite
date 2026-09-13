@@ -215,9 +215,9 @@ h1, h2, h3, h4, .display-text {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  max-width: 1020px;
-  height: 64px;
-  padding: 0 12px 0 24px;
+  max-width: 1080px;
+  height: 80px;
+  padding: 0 16px 0 28px;
   background-color: var(--glass-bg);
   backdrop-filter: blur(var(--glass-blur));
   -webkit-backdrop-filter: blur(var(--glass-blur));
@@ -240,19 +240,24 @@ h1, h2, h3, h4, .display-text {
 }
 
 .brand-logo-img {
-  height: 46px;
+  height: 68px;
   width: auto;
   object-fit: contain;
   display: block;
 }
 
 .footer-brand .brand-logo-img {
-  height: 52px;
+  height: 84px;
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    height: 68px;
+    padding: 0 12px 0 18px;
+  }
+
   .brand-logo-img {
-    height: 38px;
+    height: 52px;
   }
 }
 
