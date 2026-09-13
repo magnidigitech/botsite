@@ -55,8 +55,14 @@ function loadProjectMockups() {
  */
 function setupNavigation() {
   const toggleBtn = document.getElementById('mobile-toggle-btn');
+  const closeBtn = document.getElementById('mobile-close-btn');
   const overlay = document.getElementById('mobile-nav-overlay');
-  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-panel button');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link, .mobile-nav-panel button:not(#mobile-close-btn)');
+
+  const closeDrawer = () => {
+    if (toggleBtn) toggleBtn.setAttribute('aria-expanded', 'false');
+    if (overlay) overlay.classList.remove('is-active');
+  };
 
   if (toggleBtn && overlay) {
     toggleBtn.addEventListener('click', () => {
@@ -65,18 +71,18 @@ function setupNavigation() {
       overlay.classList.toggle('is-active', !isExpanded);
     });
 
+    if (closeBtn) {
+      closeBtn.addEventListener('click', closeDrawer);
+    }
+
     overlay.addEventListener('click', (e) => {
       if (e.target === overlay) {
-        toggleBtn.setAttribute('aria-expanded', 'false');
-        overlay.classList.remove('is-active');
+        closeDrawer();
       }
     });
 
     mobileLinks.forEach((link) => {
-      link.addEventListener('click', () => {
-        toggleBtn.setAttribute('aria-expanded', 'false');
-        overlay.classList.remove('is-active');
-      });
+      link.addEventListener('click', closeDrawer);
     });
   }
 }
